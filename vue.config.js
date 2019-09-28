@@ -22,12 +22,12 @@ module.exports = {
             }
         }
     },
-   /* devServer: {
+    devServer: {
         host: HOST,
         port: PORT,
         https: false,
         hotOnly: false,
-        proxy: { // 配置跨域
+       /* proxy: { // 配置跨域
             '/api': {
                 //要访问的跨域的api的域名
                 target: `${DEV_URL}/`,
@@ -37,9 +37,10 @@ module.exports = {
                     '^/api': ''
                 }
             }
-        },
-    },*/
+        },*/
+    },
     configureWebpack: config => {
+        config.entry.app = ["babel-polyfill", "./src/main.js"];
         config.resolve = {
             extensions: ['.js', '.vue', '.json', ".css"],
             alias: {

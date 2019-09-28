@@ -2,7 +2,14 @@
     <div class="home-index">
         <div class="page-wrapper">
             首页
-            <Button type="primary">Primary</Button>
+            <Button type="primary" @click="loading = true">显示弹框</Button>
+            <Modal
+                    v-model="loading"
+                    title="Common Modal dialog box title">
+                <p>Content of dialog</p>
+                <p>Content of dialog</p>
+                <p>Content of dialog</p>
+            </Modal>
         </div>
     </div>
 </template>
