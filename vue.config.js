@@ -22,7 +22,7 @@ module.exports = {
             }
         }
     },
-    devServer: {
+   /* devServer: {
         host: HOST,
         port: PORT,
         https: false,
@@ -38,7 +38,7 @@ module.exports = {
                 }
             }
         },
-    },
+    },*/
     configureWebpack: config => {
         config.resolve = {
             extensions: ['.js', '.vue', '.json', ".css"],

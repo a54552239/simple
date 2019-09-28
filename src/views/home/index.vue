@@ -2,6 +2,7 @@
     <div class="home-index">
         <div class="page-wrapper">
             首页
+            <Button type="primary">Primary</Button>
         </div>
     </div>
 </template>
