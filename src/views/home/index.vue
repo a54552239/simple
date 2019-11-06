@@ -6,7 +6,7 @@
             <Modal
                     v-model="loading"
                     title="Common Modal dialog box title">
-                <p>Content of dialog</p>
+                <p>{{content}}</p>
                 <p>Content of dialog</p>
                 <p>Content of dialog</p>
             </Modal>
@@ -22,6 +22,7 @@
         data() {
             return {
                 loading: false,
+                content: `Content of dialog 111`
             }
         },
         computed: {

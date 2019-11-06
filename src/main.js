@@ -2,10 +2,8 @@
 import '@babel/polyfill'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Antd from "ant-design-vue";
-import 'ant-design-vue/dist/antd.css'
-import iView from 'iview';
-import 'iview/dist/styles/iview.css';
+import viewDesign from 'view-design';
+import 'view-design/dist/styles/iview.css';
 import App from './App'
 import store from './store/index'
 import router from './router/index'
@@ -26,8 +24,7 @@ Vue.use(VueRouter);
 Vue.use(store);
 
 Vue.config.productionTip = false;
-Vue.use(Antd);
-Vue.use(iView);
+Vue.use(viewDesign);
 
 Vue.mixin(common);
 

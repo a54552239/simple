@@ -6,7 +6,7 @@ function resolve(dir) {
 
 const HOST = '127.0.0.1';
 const PORT = '8045';
-const DEV_URL = 'http://127.0.0.1/pearProjectApi/index.php';//开发的时候的接口地址
+const DEV_URL = 'http://127.0.0.1/xxxx/index.php';//开发的时候的接口地址
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
     assetsDir: 'dist',
